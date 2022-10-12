@@ -80,6 +80,8 @@ dependencies {
 
     // Hilt
     implementation 'com.google.dagger:hilt-android:2.43.1'
+    implementation 'androidx.room:room-common:2.4.3'
+    implementation 'androidx.room:room-ktx:2.4.3'
     kapt 'com.google.dagger:hilt-compiler:2.43.1'
 
     // Scalable DP and SP
