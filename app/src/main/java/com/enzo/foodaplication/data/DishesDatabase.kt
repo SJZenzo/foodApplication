@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase
     entities = [Dishes::class],
     version = 1
 )
+
 abstract class DishesDatabase : RoomDatabase(){
 
     abstract val dao: DishesDao

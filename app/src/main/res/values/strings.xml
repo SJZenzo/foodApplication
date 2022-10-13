@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">foodAplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_kcal">Kcal</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Empty space</string>
+    <string name="add_word">Add word</string>
 </resources>
