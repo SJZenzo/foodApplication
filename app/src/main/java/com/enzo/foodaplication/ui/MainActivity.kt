@@ -1,13 +1,22 @@
-package com.enzo.foodaplication
+package com.enzo.foodaplication.ui
 
+import android.net.wifi.aware.DiscoverySession
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.enzo.foodaplication.R
+import com.enzo.foodaplication.manager.DishesManager
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    @Inject
+    lateinit var dishesMenager: DishesManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        dishesMenager.init()
     }
 }

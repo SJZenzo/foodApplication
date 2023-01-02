@@ -17,11 +17,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class DishesManagerImpl(
+class DishesManagerImpl @Inject constructor(
     @ApplicationContext private val context: Context,
     private val gson: Gson
-): DishesManager{
+): DishesManager {
 
     private val diashesList = mutableListOf<Dishes>()
     private val dishesListDataStoreJsonKey =
